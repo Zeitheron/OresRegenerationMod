@@ -1,7 +1,7 @@
 #Project info
 author=Zeitheron
-start_git_commit=0
-git_commit=https://gitlab.com/Zeitheron/???/commit/{{hash}}
+start_git_commit=98d891891816ce2829e6c05774c62f37c30f97f9
+git_commit=https://github.com/Zeitheron/OresRegenerationMod/commit/{{hash}}
 
 #Runtime info
 forge_version=14.23.5.2847
