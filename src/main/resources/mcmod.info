@@ -1,0 +1,12 @@
+[
+	{
+		"modid": "oresregen",
+		"name": "Ores Regeneration",
+		"description": "This project was commissioned by Archie on Discord, and developed by Zeitheron.",
+		"version": "${version}",
+		"mcversion": "${mcversion}",
+		"authorList": [
+			"Zeitheron"
+		]
+	}
+]
