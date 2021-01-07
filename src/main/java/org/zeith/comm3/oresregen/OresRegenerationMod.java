@@ -43,6 +43,9 @@ public class OresRegenerationMod
 
 		int rad = BaseConfigOR.regenRad;
 
+		if(rad <= 0)
+			return null;
+
 		pos = pos.add(
 				world.rand.nextInt(rad) - world.rand.nextInt(rad),
 				0,
