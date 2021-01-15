@@ -112,8 +112,22 @@ public class ChunkDataOR
 
 		if(!isBroken(e.getPos()) && (ignoreHM || curY < heightMapY - 4))
 		{
-			brokenMinables.add(e.getPos());
-			brokenMinableMap.put(e.getPos(), OreDefinition.isOre(e.getState()) ? SoilConfigOR.getSoil(e.getWorld()) : e.getState());
+			boolean add = false;
+
+			for(EnumFacing face : EnumFacing.VALUES)
+			{
+				if(SoilConfigOR.SOILS.contains(e.getWorld().getBlockState(e.getPos().offset(face))))
+				{
+					add = true;
+					break;
+				}
+			}
+
+			if(add)
+			{
+				brokenMinables.add(e.getPos());
+				brokenMinableMap.put(e.getPos(), OreDefinition.isOre(e.getState()) ? SoilConfigOR.getSoil(e.getWorld()) : e.getState());
+			}
 		}
 	}
 
